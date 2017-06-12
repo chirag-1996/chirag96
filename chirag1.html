@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Admission Form
+</title>
+<style type="text/css"></style>
+</head>
+<body>
+	<script type="text/javascript">
+	var s='!@#$&';
+	function f()
+	{
+		var i;
+		var a=document.f1.t01.value;
+		var b=document.f1.x1.value;
+		var c=document.f1.x2.value;
+		var d=document.f1.x3.value;
+		var e=document.f1.x4.value;
+		
+		
+		if(a=="" )
+		{
+			alert("Please Complete The Form");
+			document.f1.pass.focus();
+            return false;
+		}
+
+		if(b=="" )
+		{
+			alert("Please Complete The Form");
+			document.f1.pass.focus();
+            return false;
+		}
+
+		if(c=="" )
+		{
+			alert("Please Complete The Form");
+			document.f1.pass.focus();
+            return false;
+		}
+
+		if(d=="" )
+		{
+			alert("Please Complete The Form");
+			document.f1.pass.focus();
+            return false;
+		}
+
+		if(e=="" )
+		{
+			alert("Please Complete The Form");
+			document.f1.pass.focus();
+            return false;
+		}
+		if(a.length>=7)
+		{
+			alert("Alphabets in First Name should not exceed 7");
+		}
+		if(b.length>=7)
+		{
+			alert("Alphabets in Last Name should not exceed 7");
+		}
+		if(c.length!=10){
+			alert("Invalid Mobile Number");
+		}
+		if (e.length<6) {alert("Password should contain maximum 6 letters")}
+		for(i=0;i<e.length;i++)
+		{
+			var z=e.charAt(i);
+			if((s.indexOf(z))>0)
+			{
+				break;
+			}
+		}		
+		if(i=e.length){
+			alert("Password Should Contain One Special Character.");
+		}
+	}
+	</script>
+	<center>
+	<form onsubmit="f()" name="f1">
+	First Name:
+	<input type="text" name="t01" placeholder="Enter Your First Name"><br>
+	Last Name:
+	<input type="text" name="x1" placeholder="Enter Your Last Name"><br>
+	Mobile No.:
+	<input type="tel" name="x2" placeholder="Enter Your Mobile Number"><br>
+	Email ID:
+	<input type="email" name="x3" placeholder="Enter Your Email"><br>
+	Password:
+	<input type="password" name="x4" placeholder="Enter Your Password"><br>
+	<br>
+	<input type="submit" value="SUBMIT">
+	</form>
+	</center>
+
+	</body>
+	</html>
